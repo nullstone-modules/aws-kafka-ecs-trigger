@@ -1,0 +1,14 @@
+org_name: nullstone
+name: aws-kafka-ecs-trigger
+friendly_name: Kafka Trigger for ECS/Fargate
+description: Triggers an ECS/Fargate app from a Kafka topic
+category: capability
+subcategory: events
+provider_types:
+    - aws
+platform: ecs
+subplatform: ""
+type: ""
+appCategories:
+    - container
+is_public: true
