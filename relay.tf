@@ -10,7 +10,7 @@ data "archive_file" "relay" {
 
 resource "aws_lambda_function" "relay" {
   function_name = local.relay_name
-  handler       = "index.handler"
+  handler       = "relay.handler"
   role          = aws_iam_role.relay.arn
   runtime       = "nodejs16.x"
   tags          = local.tags
