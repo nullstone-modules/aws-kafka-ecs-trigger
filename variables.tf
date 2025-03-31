@@ -14,7 +14,7 @@ locals {
   app_launch_type          = var.app_metadata["launch_type"]
   app_main_container       = var.app_metadata["main_container"]
   app_task_definition_name = var.app_metadata["task_definition_name"]
-  app_role_name            = var.app_metadata["role_name"]
+  app_execution_role_name  = var.app_metadata["execution_role_name"]
 }
 
 variable "batch_size" {

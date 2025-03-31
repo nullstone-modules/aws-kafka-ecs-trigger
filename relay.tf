@@ -72,6 +72,6 @@ data "aws_iam_policy_document" "relay" {
   statement {
     effect    = "Allow"
     actions   = ["iam:PassRole"]
-    resources = ["arn:aws:iam::${local.account_id}:role/${local.app_role_name}"]
+    resources = ["arn:aws:iam::${local.account_id}:role/${local.app_execution_role_name}"]
   }
 }
